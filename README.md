@@ -1,4 +1,4 @@
-# BP Medicine Advisor 💊
+# Na_Metday50 - A Simple BP Medicine Advisor 💊
 
 ## Motivation
 
