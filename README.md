@@ -1,4 +1,4 @@
-# Na_Metday50 - A Simple BP Medicine Advisor 💊
+# VBP - A Simple BP Medicine Advisor 💊
 
 ## Motivation
 
@@ -18,7 +18,7 @@ This project was created to provide a simple and reliable blood pressure (BP) ad
 
 ## Live Demo
 
-Try it here: [https://nametday50.streamlit.app/](https://nametday50.streamlit.app/)
+Try it here: [https://nametday.streamlit.app/](https://nametday.streamlit.app/)
 
 ## Setup
 

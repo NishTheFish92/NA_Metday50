@@ -18,19 +18,19 @@ def main():
         is_normal = not is_high and not is_low
         critical_low = systolic < 100
         if(critical_low):
-            advice = "Inform immediately - Critically low"
-        elif time == "Night" and is_high:
-            advice = "Night time BP is high: Take metxl."
-        elif time == "Morning" and is_high:
-            advice = "Morning BP is high: Do not take sodium today."
-        elif is_low and time == "Morning":
-            advice = "Morning BP is low: Take sodium tablet."
-        elif is_low and time == "Night":
-            advice = "Night BP is low, Take buttermilk and if BP is low next day take sodium"
+            advice = "### Inform immediately. Take sodium. Priority is to get BP back up. BP is Critically low"
         elif is_normal:
-            advice = "BP is normal: No further action needed."
+            advice = "### BP is normal: Take sodium every alternate day and take Telday40 like usual."
+        elif time == "Night" and is_high:
+            advice = "### Night time BP is high: Take MetXL and Telday40. (MetXL should be taken if and only if this message is seen)"
+        elif time == "Morning" and is_high:
+            advice = "### Morning BP is high: Sodium tablet is to be taken every alternate day. However, as BP is high do not take sodium tablet today. Take Telday40 like usual."
+        elif is_low and time == "Morning":
+            advice = "### Morning BP is low: Sodium tablet is to be taken every alternate day. However, as BP is low take sodium tablet today. Take Telday40 like usual."
+        elif is_low and time == "Night":
+            advice = "### Night BP is low, Take buttermilk. Take Telday40 even if BP is low."
         else:
-            advice = "BP does not fall in any of the regular conditions - Inform"
+            advice = "### BP does not fall in any of the regular conditions - Inform or call immediately so that further action can be determined."
         st.success("Advice:")
         st.write(advice)
 
